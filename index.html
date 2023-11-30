@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+         
         .navbar {
-            display: flex;
-            justify-content:flex-end;
-            align-items:center;
-            /* text-align: right; */
-            font-size: large;
-            background-color:whitesmoke;
             height: 32px;
-            gap: 8px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: large;
+            background-color: whitesmoke;
+            
+        }
+    
+        .navbar a {
+            width: fit-content;
+            height: inherit;
+            /* justify-content: center; */
+            line-height: 32px;
+            /* border: 1px solid red; */
+            padding: 0px 20px;
+            text-decoration: none;
+            border-left: 1px solid gray;
+        }
+
+        .navbar a:hover {
+            background-color: gray;
+            color: whitesmoke;
+
         }
 
         .profilePic{
@@ -40,12 +60,12 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="./index.html">Home</a> |
-        <a href="./education.html">Education</a> |
-        <a href="./work.html">Work Experience</a> |
-        <a href="./contact.html">Contact Me</a> |
+        <a href="./index.html">Home</a> 
+        <a href="./education.html">Education</a> 
+        <a href="./work.html">Work Experience</a> 
+        <a href="./contact.html">Contact Me</a> 
     </div>
-    
+    <hr>
 
     <div class="container">
         <h2>Kitsanarak Bunsri</h2>
@@ -80,7 +100,9 @@
         
     </div>
     <hr>
-    <a href="https://www.google.com">google</a>
+    <div class="container">
+        <a href="https://www.google.com">google</a>
+    </div>
 
    
 
