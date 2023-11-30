@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        .navbar {
+            height: 32px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            /* text-align: right; */
+            font-size: large;
+            background-color: whitesmoke;
+            
+        }
+    
+        .navbar a {
+            width: fit-content;
+            height: inherit;
+            /* justify-content: center; */
+            line-height: 32px;
+            /* border: 1px solid red; */
+            padding: 0px 20px;
+            text-decoration: none;
+            border-left: 1px solid gray;
+        }
+
+        .navbar a:hover {
+            background-color: gray;
+            color: whitesmoke;
+
+        }
+    
+        h1 {
+            text-align: center;
+        }
+    
+        form {
+            width: 50%;
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 32px 50px;
+    
+        }
+    
+        input[type=text],
+        input[type=email],
+        select,
+        textarea {
+            /* width: 100%; */
+            width: 100%;
+            padding: 5px 8px;
+            margin-bottom: 16px;
+        }
+    
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./index.html">Home</a> 
+        <a href="./education.html">Education</a> 
+        <a href="./work.html">Work Experience</a> 
+        <a href="./contact.html">Contact Me</a> 
+    </div>
+     
+    <div class="contact_feild">
+     
+
+            <h1>Contact Me &#9742;</h1>
+            <form action="">
+                <h3>Enter your info...</h3>
+                <label for="name">Your Name</label> <br>
+                <input type="text" name="name" id="name" placeholder="Enter your name"> <br>
+                
+                <label for="emali">Your E-mail</label> <br>
+                <input type="email" name="email" id="email" placeholder="Example@yourmail.com"> <br>
+                
+                <label for="gender">Gender</label> <br>
+                <select name="gender" id="gender">
+                    <option value="" disabled selected>Please select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer Not to Answer">Prefer Not to Answer</option>
+                </select> 
+                <br>
+                
+                <label for="Message">Message</label> <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                <br>
+                
+                <input type="button" value="Send">
+                <input type="reset" value="Clear">
+
+                
+                
+            </form>
+ 
+    </div>
+        
+</body>
+</html>
